@@ -6,6 +6,8 @@ import LayoutFooter from '@/views/Layout/components/LayoutFooter.vue'
 <template>
     <!-- 头部 -->
     <LayoutHeader></LayoutHeader>
+    <!-- 主体 -->
+    <RouterView />
     <!-- 页脚 -->
     <LayoutFooter />
 </template>

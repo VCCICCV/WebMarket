@@ -1,5 +1,5 @@
 {
-  "name": "WebMarket",
+  "name": "webmarket",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,11 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.4.0",
+    "element-plus": "^2.3.6",
+    "pinia": "^2.0.0-rc.10",
     "vue": "^3.2.47",
-    "vue-router": "^4.2.0"
+    "vue-router": "^4.2.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
+    "sass": "^1.63.4",
     "unplugin-auto-import": "^0.16.4",
     "unplugin-vue-components": "^0.25.1",
     "vite": "^4.3.9"

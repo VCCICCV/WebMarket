@@ -10,16 +10,16 @@
         <dl>
           <dt>客户服务</dt>
           <dd><i class="iconfont icon-kefu"></i> 在线客服</dd>
-          <dd><i class="iconfont icon-question"></i> 问题反馈</dd>
+          <dd><i class="iconfont icon-wenti"></i> 问题反馈</dd>
         </dl>
         <dl>
           <dt>关注我们</dt>
-          <dd><i class="iconfont icon-weixin"></i> 公众号</dd>
+          <dd><i class="iconfont icon-weixin"></i>微信</dd>
           <dd><i class="iconfont icon-weibo"></i> 微博</dd>
         </dl>
         <dl>
           <dt>下载APP</dt>
-          <dd class="qrcode"><img src="@/assets/images/qrcode.jpg" /></dd>
+          <dd class="qrcode"><img src="@/assets/images/code.jpg" /></dd>
           <dd class="download">
             <span>扫描二维码</span>
             <span>立马下载APP</span>
@@ -28,7 +28,7 @@
         </dl>
         <dl>
           <dt>服务热线</dt>
-          <dd class="hotline">400-0000-000 <small>周一至周日 8:00-18:00</small></dd>
+          <dd class="hotline">xxx-xxxxx-xxx <small>周一至周日 8:00-18:00</small></dd>
         </dl>
       </div>
     </div>
@@ -38,20 +38,21 @@
         <div class="slogan">
           <a href="javascript:;">
             <i class="iconfont icon-footer01"></i>
-            <span>价格亲民</span>
+            <span>探索未知</span>
           </a>
           <a href="javascript:;">
             <i class="iconfont icon-footer02"></i>
-            <span>物流快捷</span>
+            <span>创造未来</span>
           </a>
           <a href="javascript:;">
             <i class="iconfont icon-footer03"></i>
-            <span>品质新鲜</span>
+            <span>超越想象</span>
           </a>
         </div>
         <!-- 版权信息 -->
         <div class="copyright">
           <p>
+            <!-- 代表的是发生动作时执行一段javascript代码，但是这个代码是空的，所以什么也不执行 -->
             <a href="javascript:;">关于我们</a>
             <a href="javascript:;">帮助中心</a>
             <a href="javascript:;">售后服务</a>
@@ -60,7 +61,7 @@
             <a href="javascript:;">搜索推荐</a>
             <a href="javascript:;">友情链接</a>
           </p>
-          <p>CopyRight © 小兔鲜儿</p>
+          <p>CopyRight © WebMarket</p>
         </div>
       </div>
     </div>
@@ -178,7 +179,7 @@
   }
 
   .slogan {
-    height: 178px;
+    height: 100px;
     line-height: 58px;
     padding: 60px 100px;
     border-bottom: 1px solid #434343;
@@ -186,7 +187,7 @@
     justify-content: space-between;
 
     a {
-      height: 58px;
+      height: 50px;
       line-height: 58px;
       color: #fff;
       font-size: 28px;
@@ -222,7 +223,6 @@
       line-height: 1;
       padding: 0 10px;
       border-right: 1px solid #999;
-
       &:last-child {
         border-right: none;
       }

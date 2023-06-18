@@ -1,31 +1,14 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-const categoryList = ref([
-  {
-    id: "1",
-    name: "首页",
-  },
-  {
-    id: "2",
-    name: "首页",
-  },
-  {
-    id: "3",
-    name: "首页",
-  },
-  {
-    id: "4",
-    name: "首页",
-  },
-  {
-    id: "5",
-    name: "首页",
-  },
-  {
-    id: "6",
-    name: "首页",
-  },
-])
+<script setup>
+import { ref,onMounted } from 'vue';
+import {getCategoryAPI} from '@/apis/category'
+const categoryList = ref([])
+const getCategoryData = async () => {
+   const res = await getCategoryAPI()
+
+  // console.log(res.data)
+  categoryList.value = res.data
+}
+onMounted(() => getCategoryData())
 </script>
 
 
@@ -67,7 +50,6 @@ const categoryList = ref([
         border-bottom: 1px solid $xtxColor;
       }
     }
-
     .active {
       color: $xtxColor;
       border-bottom: 1px solid $xtxColor;

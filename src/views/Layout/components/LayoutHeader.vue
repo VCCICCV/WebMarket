@@ -73,7 +73,7 @@ import LayoutHeaderUI from '@/views/Layout/components/LayoutHeaderUI.vue'
 
   //     em {
   //       font-style: normal;
-  //       position: absolute;
+  //       position: absolute;+ 
   //       right: 0;
   //       top: 0;
   //       padding: 1px 6px;

@@ -30,10 +30,10 @@ import LayoutHeaderUI from '@/views/Layout/components/LayoutHeaderUI.vue'
     width: 200px;
     a {
       display: block;
-      height: 132px;
+      height: 100px;
       width: 100%;
       text-indent: -9999px;
-      background: url('@/assets/svg/nodata.svg') no-repeat center 18px / contain;
+      background: url('@/assets/svg/nodata.svg') no-repeat center center / contain;
     }
   }
 
@@ -73,7 +73,7 @@ import LayoutHeaderUI from '@/views/Layout/components/LayoutHeaderUI.vue'
 
   //     em {
   //       font-style: normal;
-  //       position: absolute;+ 
+  //       position: absolute;+
   //       right: 0;
   //       top: 0;
   //       padding: 1px 6px;

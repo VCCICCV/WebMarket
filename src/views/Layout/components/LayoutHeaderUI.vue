@@ -1,14 +1,6 @@
 <script setup>
-import { ref,onMounted } from 'vue';
-import {getCategoryAPI} from '@/apis/category'
-const categoryList = ref([])
-const getCategoryData = async () => {
-   const res = await getCategoryAPI()
-
-  // console.log(res.data)
-  categoryList.value = res.data
-}
-onMounted(() => getCategoryData())
+import { useCategoryStore } from '@/stores/categoryStore'
+const categoryStore = useCategoryStore()
 </script>
 
 
@@ -17,7 +9,7 @@ onMounted(() => getCategoryData())
     <li class="home">
       <RouterLink to="/">首页</RouterLink>
     </li>
-    <li class="home" v-for="item in categoryList" :key="item.id">
+    <li class="home" v-for="item in categoryStore.categoryList" :key="item.id">
       <RouterLink active-class="active" :to="`/category/${item.id}`">
         {{ item.name }}
       </RouterLink>
@@ -33,12 +25,12 @@ onMounted(() => getCategoryData())
   padding-left: 40px;
   position: relative;
   z-index: 998;
-
   li {
     margin-right: 40px;
     width: 38px;
     text-align: center;
 
+    // 选择线
     a {
       font-size: 16px;
       line-height: 32px;
@@ -50,6 +42,7 @@ onMounted(() => getCategoryData())
         border-bottom: 1px solid $xtxColor;
       }
     }
+
     .active {
       color: $xtxColor;
       border-bottom: 1px solid $xtxColor;

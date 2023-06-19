@@ -1,4 +1,3 @@
-// import request from '@/utils/http'
 import httpInstance from "@/utils/http"
 
 /**
@@ -9,5 +8,15 @@ import httpInstance from "@/utils/http"
 export function getCategoryAPI () {
   return httpInstance({
     url: '/category/list'
+  })
+}
+/**
+ * @description: 获取轮播图数据
+ * @param {*} id 导航id
+ * @return {*}
+ */
+export function getBannerAPI (id) {
+  return httpInstance({
+    url: `/category/banner/${id}`
   })
 }

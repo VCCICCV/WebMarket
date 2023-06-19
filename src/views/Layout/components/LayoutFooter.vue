@@ -70,7 +70,7 @@
 
 <style scoped lang="scss">
 .app_footer {
-  overflow: hidden;
+  overflow: auto;
   background-color: #f5f5f5;
   padding-top: 20px;
 

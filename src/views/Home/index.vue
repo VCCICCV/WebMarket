@@ -7,7 +7,7 @@ import Example from '@/views/Home/components/Example.vue'
     <!-- 轮播图 -->
     <HomeBanner></HomeBanner>
     <!-- 测试 -->
-    <Example></Example>
+    <!-- <Example></Example> -->
     <!-- 精选 -->
     <!-- 热门 -->
     <!-- 受欢迎 -->

@@ -1,104 +1,44 @@
 <script setup>
+import SmallWindowDisplay from './SmallWindowDisplay.vue'
+import {ref} from 'vue'
+// 创建响应式变量
+const isPopupVisible = ref(false);
+function showPopup() {
+  isPopupVisible.value = true;
+}
 
-
-
+function hidePopup() {
+  isPopupVisible.value = false;
+}
 </script>
 
 <template>
-<div>
-    123323232
+  <div id="image-container">
+  <ul  v-for="row in 5">
+    <li v-for="col in 2" :key=col><img src="@/assets/images/image1.jpg" alt="Image 1" @mouseover="showPopup" @mouseout="hidePopup"></li>
+    <!--小窗展示 -->
+    <SmallWindowDisplay v-if="isPopupVisible" />
+  </ul>
 </div>
+
 </template>
 
 
 <style scoped lang="scss">
-.top-category {
-  h3 {
-    font-size: 28px;
-    color: #666;
-    font-weight: normal;
-    text-align: center;
-    line-height: 100px;
+
+  #image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .sub-list {
-    margin-top: 20px;
-    background-color: #fff;
-
-    ul {
-      display: flex;
-      padding: 0 32px;
-      flex-wrap: wrap;
-
-      li {
-        width: 168px;
-        height: 160px;
-
-
-        a {
-          text-align: center;
-          display: block;
-          font-size: 16px;
-
-          img {
-            width: 100px;
-            height: 100px;
-          }
-
-          p {
-            line-height: 40px;
-          }
-
-          &:hover {
-            color: $xtxColor;
-          }
-        }
-      }
-    }
+  #image-container li {
+    margin: 10px;
   }
 
-  .ref-goods {
-    background-color: #fff;
-    margin-top: 20px;
-    position: relative;
-
-    .head {
-      .xtx-more {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-      }
-
-      .tag {
-        text-align: center;
-        color: #999;
-        font-size: 20px;
-        position: relative;
-        top: -20px;
-      }
-    }
-
-    .body {
-      display: flex;
-      justify-content: space-around;
-      padding: 0 40px 30px;
-    }
+  #image-container img {
+    width: 200px;
+    height: 150px;
   }
 
-  .bread-container {
-    padding: 25px 0;
-  }
-}
-
-.home-banner {
-  width: 1240px;
-  height: 500px;
-  margin: 0 auto;
-
-
-  img {
-    width: 100%;
-    height: 500px;
-  }
-}
 </style>

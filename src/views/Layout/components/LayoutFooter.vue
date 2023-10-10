@@ -73,6 +73,7 @@
   overflow: auto;
   background-color: #f5f5f5;
   padding-top: 20px;
+  margin-bottom:0px;
 
   .contact {
     background: #fff;
@@ -186,6 +187,7 @@
     display: flex;
     justify-content: space-between;
 
+
     a {
       height: 50px;
       line-height: 58px;
@@ -212,6 +214,7 @@
     text-align: center;
     color: #999;
     font-size: 15px;
+
 
     p {
       line-height: 1;
